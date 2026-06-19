@@ -1,0 +1,29 @@
+:root {
+  /* Color tokens */
+  --ocean-deep: #003049;
+  --biolum: #00F5D4;
+  --captcha-blue: #4A90D9;
+  --chrome-gray: #f0f0f0;
+  --card-white: #ffffff;
+  --border-gray: #c8c8c8;
+  --wrong-red: #E24B4A;
+  --streak-amber: #FFB347;
+  --muted: #888888;
+  --attr: #bbbbbb;
+
+  /* Type tokens */
+  --font-ui: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--chrome-gray);
+  font-family: var(--font-ui);
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}

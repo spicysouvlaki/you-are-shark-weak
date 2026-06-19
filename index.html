@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>SharkCAPTCHA — Prove you actually know sharks</title>
+  <meta name="description" content="A CAPTCHA-themed shark ID quiz. Select all images containing a nurse shark." />
+
+  <!-- Open Graph / iMessage preview -->
+  <meta property="og:title" content="SharkCAPTCHA — Prove you actually know sharks" />
+  <meta property="og:description" content="A CAPTCHA-themed shark ID quiz. Select all images containing a nurse shark." />
+  <meta property="og:image" content="og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Core (order matters) -->
+  <script src="js/state.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/data/sharks.js"></script>
+
+  <!-- Question mechanics (each self-registers) -->
+  <script src="js/mechanics/q1-tiles.js"></script>
+  <script src="js/mechanics/q2-oddoneout.js"></script>
+  <script src="js/mechanics/q3-truefalse.js"></script>
+  <script src="js/mechanics/q4-sort.js"></script>
+  <script src="js/mechanics/q5-minigame.js"></script>
+  <script src="js/mechanics/q6-spotfake.js"></script>
+  <script src="js/mechanics/q7-shadow.js"></script>
+  <script src="js/mechanics/q8-rank.js"></script>
+  <script src="js/mechanics/q9-hotcold.js"></script>
+  <script src="js/mechanics/q10-elimination.js"></script>
+
+  <!-- Full screens -->
+  <script src="js/screens/onboarding.js"></script>
+  <script src="js/screens/score.js"></script>
+
+  <!-- Router + boot (last) -->
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
